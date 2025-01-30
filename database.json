@@ -84,46 +84,30 @@
     {
       "id": 0,
       "practitionerId": 0,
-      "bio": "My name may be difficult for many people to pronounce, please call me Dr. Seuss. I write children's short stories. I love using rythmn of spoken word. I am great with children and love to give them the due care. I have been in the practice for many, many years. The greatest thing that I have learned is that: laughter truly is the cure for so many problems we face\n"
+      "bio": "My name may be difficult for many people to pronounce, please call me Dr. Seuss. I write children's short stories. I love using rythmn of spoken word. I am great with children and love to give them the due care. I have been in the practice for many, many years. The greatest thing that I have learned is that: laughter truly is the cure for so many problems we face\n\n"
     },
     {
       "practitionerId": 1,
-      "bio": "Here is my bio",
+      "bio": "This is my profile",
       "id": 1
     }
   ],
   "appointments": [
     {
-      "id": 4,
-      "reason": "This better take me to my appointments list!",
-      "scheduledDate": "2025-01-30T07:00",
+      "id": 1,
+      "reason": "Here is a new appointment",
+      "scheduledDate": "2025-01-30T11:43",
       "visitorId": 0,
       "practitionerId": 0,
       "completed": true
     },
     {
-      "id": 5,
-      "reason": "I can still create a new appointment after scheduling directly with a practitioner",
-      "scheduledDate": "2025-01-28T14:27",
-      "visitorId": 0,
-      "practitionerId": 0,
-      "completed": true
-    },
-    {
-      "id": 6,
-      "reason": "I wanna meet ya, because I love ya",
-      "scheduledDate": "2025-02-14T02:30",
+      "reason": "Here is a second appointmnet",
+      "scheduledDate": "2025-01-30T11:48",
       "visitorId": 0,
       "practitionerId": 1,
-      "completed": false
-    },
-    {
-      "reason": "This is so great",
-      "scheduledDate": "2025-01-20T21:37",
-      "visitorId": 0,
-      "practitionerId": 0,
       "completed": false,
-      "id": 7
+      "id": 2
     }
   ]
 }
