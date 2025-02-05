@@ -17,8 +17,23 @@
       "id": 2
     },
     {
-      "id": 4,
+      "id": 3,
       "email": "a.angelou@medschool.edu",
+      "isStaff": true
+    },
+    {
+      "id": 4,
+      "email": "drsmith@clinic.com",
+      "isStaff": true
+    },
+    {
+      "id": 5,
+      "email": "janepatient@email.com",
+      "isStaff": false
+    },
+    {
+      "id": 6,
+      "email": "drmiller@clinic.com",
       "isStaff": true
     }
   ],
@@ -54,6 +69,38 @@
       "dateOfBirth": "1999-08-24",
       "genderId": 0,
       "userId": 2
+    },
+    {
+      "id": 1,
+      "fullName": "Jane Marie Cooper",
+      "dateOfBirth": "1992-03-15",
+      "genderId": 1,
+      "userId": 3
+    },
+    {
+      "id": 2,
+      "fullName": "Robert James Wilson",
+      "dateOfBirth": "1985-11-23",
+      "genderId": 0,
+      "userId": 5
+    }
+  ],
+  "practices": [
+    {
+      "id": 0,
+      "practice": "Speech Therapy"
+    },
+    {
+      "id": 1,
+      "practice": "Physical Therapy"
+    },
+    {
+      "id": 2,
+      "practice": "Occupational Therapy"
+    },
+    {
+      "id": 3,
+      "practice": "Pediatric Care"
     }
   ],
   "practitioners": [
@@ -62,9 +109,7 @@
       "fullName": "Theodore Seuss Geisel",
       "age": 120,
       "genderId": 0,
-      "practice": [
-        "Speech Therapy"
-      ],
+      "practiceId": 0,
       "experience": 53,
       "userId": 1
     },
@@ -73,41 +118,142 @@
       "fullName": "Anthony Anum Angelou",
       "age": 26,
       "genderId": 9,
-      "practice": [
-        "General Health"
-      ],
+      "practiceId": 1,
       "experience": 4,
       "userId": 4
+    },
+    {
+      "id": 2,
+      "fullName": "Sarah Miller",
+      "age": 45,
+      "genderId": 1,
+      "practiceId": 1,
+      "experience": 15,
+      "userId": 4
+    },
+    {
+      "id": 3,
+      "fullName": "John Smith",
+      "age": 38,
+      "genderId": 0,
+      "practiceId": 2,
+      "experience": 10,
+      "userId": 2
     }
   ],
   "profiles": [
     {
       "id": 0,
       "practitionerId": 0,
-      "bio": "My name may be difficult for many people to pronounce, please call me Dr. Seuss. I write children's short stories. I love using rythmn of spoken word. I am great with children and love to give them the due care. I have been in the practice for many, many years. The greatest thing that I have learned is that: laughter truly is the cure for so many problems we face\n\n"
+      "bio": "Dr. Geisel is a renowned speech therapist with over 50 years of experience. He specializes in helping children overcome speech impediments through creative and engaging methods."
+    },
+    {
+      "id": 1,
+      "practitionerId": 2,
+      "bio": "Dr. Miller is a dedicated physical therapist who focuses on sports rehabilitation and post-surgery recovery. She has helped numerous patients regain their mobility and strength."
     },
     {
       "practitionerId": 1,
-      "bio": "This is my profile",
-      "id": 1
+      "bio": "Here is a little bit about me.",
+      "id": 2
     }
   ],
   "appointments": [
     {
-      "id": 1,
-      "reason": "Here is a new appointment",
-      "scheduledDate": "2025-01-30T11:43",
+      "reason": "I meant to schedule this later",
+      "scheduledDate": "2024-12-01T15:24",
+      "visitorId": 0,
+      "practitionerId": 2,
+      "completed": false,
+      "id": 1
+    },
+    {
+      "reason": "I have not laughed in a while",
+      "scheduledDate": "2025-02-04T10:47",
       "visitorId": 0,
       "practitionerId": 0,
+      "completed": false,
+      "id": 2
+    },
+    {
+      "reason": "Appointment 1",
+      "scheduledDate": "2025-02-04T19:16",
+      "visitorId": 0,
+      "practitionerId": 0,
+      "completed": false,
+      "id": 3
+    },
+    {
+      "reason": "Appointment 2",
+      "scheduledDate": "2025-01-01T19:17",
+      "visitorId": 0,
+      "practitionerId": 0,
+      "completed": false,
+      "id": 4
+    },
+    {
+      "reason": "Appointment 3",
+      "scheduledDate": "2025-12-01T19:17",
+      "visitorId": 0,
+      "practitionerId": 0,
+      "completed": false,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "reason": "I need to speak with the mayor, privately.",
+      "scheduledDate": "2025-02-05T11:40",
+      "visitorId": 0,
+      "practitionerId": 1,
+      "completed": false
+    },
+    {
+      "id": 7,
+      "reason": "Annual checkup",
+      "scheduledDate": "2024-03-15T10:30",
+      "visitorId": 1,
+      "practitionerId": 1,
       "completed": true
     },
     {
-      "reason": "Here is a second appointmnet",
-      "scheduledDate": "2025-01-30T11:48",
+      "id": 8,
+      "reason": "Follow-up appointment",
+      "scheduledDate": "2024-04-20T14:15",
+      "visitorId": 0,
+      "practitionerId": 0,
+      "completed": false
+    },
+    {
+      "id": 9,
+      "reason": "Initial consultation",
+      "scheduledDate": "2024-05-01T09:00",
+      "visitorId": 2,
+      "practitionerId": 2,
+      "completed": false
+    },
+    {
+      "id": 10,
+      "reason": "Therapy session",
+      "scheduledDate": "2024-03-10T11:00",
+      "visitorId": 1,
+      "practitionerId": 2,
+      "completed": true
+    },
+    {
+      "id": 11,
+      "reason": "Regular checkup",
+      "scheduledDate": "2024-06-15T13:45",
       "visitorId": 0,
       "practitionerId": 1,
-      "completed": false,
-      "id": 2
+      "completed": false
+    },
+    {
+      "id": 12,
+      "reason": "I meant to schedule this later",
+      "scheduledDate": "2024-12-01T15:24",
+      "visitorId": 0,
+      "practitionerId": 2,
+      "completed": false
     }
   ]
 }
