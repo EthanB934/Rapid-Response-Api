@@ -35,6 +35,42 @@
       "id": 6,
       "email": "drmiller@clinic.com",
       "isStaff": true
+    },
+    {
+      "email": "NewPatient@newEmail.com",
+      "fullName": "Grimothy Hoshea Bubba",
+      "isStaff": false,
+      "id": 7
+    },
+    {
+      "email": "newPatient@newEmail.com",
+      "fullName": "newPatient",
+      "isStaff": false,
+      "id": 8
+    },
+    {
+      "email": "newDoctor@newEmail2.com",
+      "fullName": "New Doctor",
+      "isStaff": true,
+      "id": 9
+    },
+    {
+      "email": "newDoctor@newEmail3.com",
+      "fullName": "Doctor One",
+      "isStaff": true,
+      "id": 10
+    },
+    {
+      "email": "newMember@newEmail4.com",
+      "fullName": "New Member",
+      "isStaff": false,
+      "id": 11
+    },
+    {
+      "email": "email@email.com",
+      "fullName": "New Member",
+      "isStaff": false,
+      "id": 12
     }
   ],
   "genders": [
@@ -53,6 +89,22 @@
     {
       "id": 10,
       "gender": "Other"
+    },
+    {
+      "gender": "Non-Binary",
+      "id": 11
+    },
+    {
+      "gender": "New Gender",
+      "id": 12
+    },
+    {
+      "gender": "Transgender",
+      "id": 13
+    },
+    {
+      "gender": "New Gender Two",
+      "id": 14
     }
   ],
   "visitors": [
@@ -83,6 +135,34 @@
       "dateOfBirth": "1985-11-23",
       "genderId": 0,
       "userId": 5
+    },
+    {
+      "fullName": "New Patient",
+      "dateOfBirth": "2025-11",
+      "genderId": "11",
+      "userId": 7,
+      "id": 3
+    },
+    {
+      "fullName": "Their Name",
+      "dateOfBirth": "2025-02",
+      "genderId": "12",
+      "userId": 8,
+      "id": 4
+    },
+    {
+      "fullName": "New Visitor",
+      "dateOfBirth": "2025-11",
+      "genderId": "14",
+      "userId": 11,
+      "id": 5
+    },
+    {
+      "fullName": "New Member",
+      "dateOfBirth": "2025-11",
+      "genderId": "13",
+      "userId": 12,
+      "id": 6
     }
   ],
   "practices": [
@@ -139,13 +219,31 @@
       "practiceId": 2,
       "experience": 10,
       "userId": 2
+    },
+    {
+      "fullName": "My Name",
+      "age": "85",
+      "genderId": "0",
+      "practiceId": "2",
+      "experience": "25",
+      "userId": 9,
+      "id": 4
+    },
+    {
+      "fullName": "New Name",
+      "age": "30",
+      "genderId": "12",
+      "practiceId": "3",
+      "experience": "5",
+      "userId": 10,
+      "id": 5
     }
   ],
   "profiles": [
     {
       "id": 0,
       "practitionerId": 0,
-      "bio": "Dr. Geisel is a renowned speech therapist with over 50 years of experience. He specializes in helping children overcome speech impediments through creative and engaging methods."
+      "bio": "Dr. Geisel is a renowned speech therapist with over 50 years of experience. He specializes in helping children overcome speech impediments through creative and engaging methods.\n"
     },
     {
       "id": 1,
@@ -156,33 +254,14 @@
       "practitionerId": 1,
       "bio": "Here is a little bit about me.",
       "id": 2
+    },
+    {
+      "id": 3,
+      "practitionerId": 4,
+      "bio": "Here is my bio"
     }
   ],
   "appointments": [
-    {
-      "reason": "I meant to schedule this later",
-      "scheduledDate": "2024-12-01T15:24",
-      "visitorId": 0,
-      "practitionerId": 2,
-      "completed": false,
-      "id": 1
-    },
-    {
-      "reason": "I have not laughed in a while",
-      "scheduledDate": "2025-02-04T10:47",
-      "visitorId": 0,
-      "practitionerId": 0,
-      "completed": false,
-      "id": 2
-    },
-    {
-      "reason": "Appointment 1",
-      "scheduledDate": "2025-02-04T19:16",
-      "visitorId": 0,
-      "practitionerId": 0,
-      "completed": false,
-      "id": 3
-    },
     {
       "reason": "Appointment 2",
       "scheduledDate": "2025-01-01T19:17",
@@ -198,14 +277,6 @@
       "practitionerId": 0,
       "completed": false,
       "id": 5
-    },
-    {
-      "id": 6,
-      "reason": "I need to speak with the mayor, privately.",
-      "scheduledDate": "2025-02-05T11:40",
-      "visitorId": 0,
-      "practitionerId": 1,
-      "completed": false
     },
     {
       "id": 7,
@@ -254,6 +325,46 @@
       "visitorId": 0,
       "practitionerId": 2,
       "completed": false
+    },
+    {
+      "id": 15,
+      "reason": "Appointment 1",
+      "scheduledDate": "2025-02-07T10:58",
+      "visitorId": 0,
+      "practitionerId": 0,
+      "completed": true
+    },
+    {
+      "reason": "Appointment 4",
+      "scheduledDate": "2025-02-10T10:55",
+      "visitorId": 0,
+      "practitionerId": 1,
+      "completed": false,
+      "id": 18
+    },
+    {
+      "reason": "Appointment 5",
+      "scheduledDate": "2025-02-10T10:56",
+      "visitorId": 0,
+      "practitionerId": 2,
+      "completed": false,
+      "id": 19
+    },
+    {
+      "reason": "Appointment 6",
+      "scheduledDate": "2025-02-17T00:46",
+      "visitorId": 0,
+      "practitionerId": 0,
+      "completed": false,
+      "id": 20
+    },
+    {
+      "reason": "Appointment 7",
+      "scheduledDate": "2025-03-01T00:47",
+      "visitorId": 0,
+      "practitionerId": 4,
+      "completed": false,
+      "id": 21
     }
   ]
 }
